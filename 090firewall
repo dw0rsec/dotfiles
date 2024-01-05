@@ -1,0 +1,40 @@
+#!/bin/sh
+set -e
+
+# "stealth" firewall copy to /etc/network/if-up.d/
+ 
+[ "$IFACE" != "lo" ] || exit 0
+
+IPTABLES="/sbin/iptables"
+IP6TABLES="/sbin/ip6tables"
+
+$IPTABLES --flush
+$IPTABLES --delete-chain
+$IPTABLES -t mangle --flush
+$IPTABLES -t mangle --delete-chain
+$IPTABLES -t nat --flush
+$IPTABLES -t nat --delete-chain
+
+echo 0 > /proc/sys/net/ipv4/ip_forward
+
+$IPTABLES -P INPUT DROP
+$IPTABLES -P FORWARD DROP
+$IPTABLES -P OUTPUT ACCEPT
+$IP6TABLES -P INPUT DROP
+$IP6TABLES -P FORWARD DROP
+$IP6TABLES -P OUTPUT DROP
+
+$IPTABLES -A INPUT -i lo -j ACCEPT
+$IPTABLES -A OUTPUT -o lo -j ACCEPT
+
+$IPTABLES -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+#$IPTABLES -A INPUT -p icmp -m icmp --icmp-type echo-reply -j ACCEPT
+#$IPTABLES -A INPUT -p icmp -m icmp --icmp-type echo-request -j ACCEPT
+#$IPTABLES -A INPUT -p icmp -m icmp --icmp-type destination-unreachable -j ACCEPT
+
+#$IPTABLES -A INPUT -p tcp --dport 22 -j ACCEPT
+#$IPTABLES -A INPUT -p tcp --dport 21 -j ACCEPT
+#$IPTABLES -A INPUT -p tcp --dport 80 -j ACCEPT
+#$IPTABLES -A INPUT -p tcp --dport 443 -j ACCEPT
+#$IPTABLES -A INPUT -p tcp --dport 8080 -j ACCEPT
