@@ -206,12 +206,12 @@ label:focus {
 
 #network {
     background-color: transparent;
-	color: #00ff00;
+	color: #00b853;
 }
 
 #network:hover {
     background-color: #626D91;
-    color: #00ff00;
+    color: #00b853;
 }
 
 #network.disconnected {
