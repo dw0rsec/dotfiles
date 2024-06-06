@@ -4,7 +4,7 @@
     background-color:  transparent;
     highlight:     underline bold #e9ad0c;
 	transparent: rgba(0,0,0,0);
-    font: "MesloLGS NF 12";
+    font: "MesloLGS NF 11";
 	width: 800;
 }
 window {
@@ -39,7 +39,7 @@ inputbar {
     background-color: #000000f0;
     border: 4px 4px 4px 4px;
     border-color: #626d91;
-    font: "MesloLGS NF 12";
+    font: "MesloLGS NF 11";
 }
 entry,prompt,case-indicator {
     text-font: inherit;
@@ -112,7 +112,7 @@ mode-switcher {
     border: 0px 0px 0px 0px;
 }
 button {
-    font: "MesloLGS NF 12";
+    font: "MesloLGS NF 11";
     padding: 6px;
     border: 2px 0px 2px 2px;
     border-radius: 4px 0px 0px 4px;
