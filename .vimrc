@@ -11,6 +11,7 @@ set modeline
 set t_Co=256
 set viminfofile=NONE
 filetype on
+command Cs let @/ = ""
 
 "set python syntax highlighting
 let python_highlight_all=1
