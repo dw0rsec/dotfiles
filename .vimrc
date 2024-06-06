@@ -9,6 +9,7 @@ set ruler
 set tabstop=4
 set modeline
 set t_Co=256
+set viminfofile=NONE
 filetype on
 
 "set python syntax highlighting
