@@ -1,0 +1,57 @@
+{
+  "policy": {
+    "DEFAULT": {
+      "capabilities": [
+        "frame",
+        "noscript",
+        "other",
+        "media"
+      ],
+      "temp": false
+    },
+    "TRUSTED": {
+      "capabilities": [
+        "script",
+        "media",
+        "frame",
+        "font",
+        "fetch",
+        "noscript",
+        "other"
+      ],
+      "temp": false
+    },
+    "UNTRUSTED": {
+      "capabilities": [],
+      "temp": false
+    },
+    "sites": {
+      "trusted": [
+        "§:duckduckgo.com"
+      ],
+      "untrusted": [],
+      "custom": {}
+    },
+    "enforced": true,
+    "autoAllowTop": false
+  },
+  "local": {
+    "debug": true,
+    "showCtxMenuItem": true,
+    "showCountBadge": true,
+    "showFullAddresses": false,
+    "amnesticUpdates": false,
+    "storage": "local",
+    "uuid": "64be9ddc-dbd3-4b92-bc04-b5a2fb91d306"
+  },
+  "sync": {
+    "global": false,
+    "xss": true,
+    "TabGuardMode": "global",
+    "TabGuardPrompt": "always",
+    "cascadeRestrictions": false,
+    "overrideTorBrowserPolicy": false,
+    "storage": "sync"
+  },
+  "xssUserChoices": {}
+}
