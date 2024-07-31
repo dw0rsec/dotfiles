@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 "basic setup
 syntax on
 set encoding=utf-8
@@ -27,6 +29,9 @@ au BufNewFile,BufRead *.py\
     \ set fileformat=unix
 
 "statusline configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 set laststatus=2
 set statusline=%F
 set statusline+=%r
@@ -51,6 +56,12 @@ set statusline+=/
 set statusline+=%L
 set statusline+=\ 
 set statusline+=%p%%
+
+"syntastic settings
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "default GUI colors
 let s:foreground       = "bbbbbb"
