@@ -2,7 +2,6 @@
   "policy": {
     "DEFAULT": {
       "capabilities": [
-        "frame",
         "noscript",
         "other",
         "media"
@@ -13,7 +12,6 @@
       "capabilities": [
         "script",
         "media",
-        "frame",
         "font",
         "fetch",
         "noscript",
