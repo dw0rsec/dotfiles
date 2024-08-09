@@ -12,6 +12,7 @@ set tabstop=4
 set modeline
 set t_Co=256
 set viminfofile=NONE
+set backspace=indent,eol,start
 filetype on
 command Cs let @/ = ""
 
