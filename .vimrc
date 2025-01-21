@@ -6,6 +6,7 @@ set encoding=utf-8
 set number
 set relativenumber
 set cursorline
+set hlsearch
 set incsearch
 set ruler
 set tabstop=4
@@ -13,7 +14,7 @@ set modeline
 set t_Co=256
 set viminfofile=NONE
 set backspace=indent,eol,start
-filetype on
+filetype plugin indent on
 command Cs let @/ = ""
 
 "set python syntax highlighting
