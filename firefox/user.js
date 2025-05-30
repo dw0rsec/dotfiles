@@ -9,6 +9,8 @@ user_pref("browser.display.use_document_fonts", 1);
 user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.formfill.enable", false);
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
+user_pref("browser.ml.chat.enabled", false);
+user_pref("browser.ml.enable", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
