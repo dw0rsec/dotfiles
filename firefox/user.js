@@ -1,5 +1,5 @@
-// Mozilla User Preferences
 
+// Mozilla User Preferences
 user_pref("app.normandy.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("browser.cache.disk_cache_ssl", false);
@@ -72,8 +72,12 @@ user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.vpn_promo.enabled", false);
 user_pref("cookiebanners.ui.desktop.enabled", true);
+user_pref("datareporting.healthreport.service.enabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("datareporting.sessions.current.clean", true);
+user_pref("devtools.onboarding.telemetry.logged", false);
 user_pref("dom.private-attribution.submission.enabled", false);
 user_pref("dom.security.https_first", true);
 user_pref("dom.security.https_only_mode_send_http_background_request", false);
@@ -133,7 +137,21 @@ user_pref("signon.autofillForms", false);
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("toolkit.coverage.opt-out", true);
+user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.coverage.opt-out", true);
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("toolkit.telemetry.hybridContent.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.prompted", 2);
+user_pref("toolkit.telemetry.rejected", true);
+user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
+user_pref("toolkit.telemetry.server", "");
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.unified", false);
+user_pref("toolkit.telemetry.unifiedIsOptIn", false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
 user_pref("ui.use_standins_for_native_colors", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
 user_pref("webgl.enable-debug-renderer-info", false);
