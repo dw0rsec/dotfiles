@@ -151,6 +151,7 @@ user_pref("toolkit.telemetry.server", "");
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.unifiedIsOptIn", false);
+user_pref("ui.key.menuAccessKeyFocuses", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
 user_pref("ui.use_standins_for_native_colors", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
