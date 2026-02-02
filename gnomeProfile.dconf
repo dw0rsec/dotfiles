@@ -1,0 +1,20 @@
+[/]
+audible-bell=false
+background-color='rgb(0,0,0)'
+background-transparency-percent=51
+bold-color='rgb(229,14,14)'
+bold-color-same-as-fg=false
+cell-width-scale=1.0
+cursor-colors-set=false
+font='Hack 12'
+foreground-color='rgb(255,255,255)'
+highlight-background-color='rgb(233,173,12)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(0,0,0)'
+palette=['rgb(24,24,24)', 'rgb(192,28,40)', 'rgb(40,139,93)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(163,71,186)', 'rgb(42,161,179)', 'rgb(145,145,145)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,218,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(51,199,222)', 'rgb(255,255,255)']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=true
+use-transparent-background=false
+visible-name='dw0rsec'
